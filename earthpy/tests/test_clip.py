@@ -95,7 +95,7 @@ def test_warning_line_clip_function(two_line_gdf, single_rectangle_gdf):
         cl._clip_line_poly(two_line_gdf, single_rectangle_gdf)
 
 
-def test_warning_mutli_point_clip_function(multi_point, single_rectangle_gdf):
+def test_warning_multi_point_clip_function(multi_point, single_rectangle_gdf):
     """Check that _clip_multi_point returns a deprecated warning."""
     with pytest.raises(
         Warning,
